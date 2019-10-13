@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Umut ÖZKANARYALIOĞLU</title>
+</head>
+
+<body>
+<h1>Umut ÖZKANARYALIOĞLU</h1>
+<h2>2019 Güz Döneminin ilk ödevi</h2>
+<label for="id1">Metin kutusu 1</label>
+<input type='number' id='id1' /> 
+<br>
+<label for="id2">Metin kutusu 2</label>
+<input type='number' id='id2' /> 
+<br><br>
+<button onClick= "toplama()" >Topla</button>
+<br><br>
+<label for="id3">Metin kutusu 3</label>
+<input type='text' id='id3' /> 
+<br>
+<label for="id4">Metin kutusu 4</label>
+<input type='text' id='id4' /> 
+<br><br>
+<button onClick= "birlestir()">Yapıştır</button>
+
+
+
+
+<script>
+
+function toplama(){
+
+var ilkSayi = document.getElementById("id1");
+var ikinciSayi = document.getElementById("id2");
+
+
+
+var toplam = Number(ilkSayi.value) + Number(ikinciSayi.value);
+
+alert(toplam);
+}
+
+
+
+function birlestir(){
+
+var ilkDeger = document.getElementById("id3");
+var ikinciDeger = document.getElementById("id4");
+
+var sonuc = ilkDeger.value + ikinciDeger.value;
+
+alert(sonuc);
+
+}
+
+
+</script>
+
+</body>
+
+
+
+
+</html>
